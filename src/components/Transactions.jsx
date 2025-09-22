@@ -272,14 +272,8 @@ const Transactions = () => {
       <div className="px-2 sm:px-4 pb-4">
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="flex flex-col justify-center items-center py-12">
-            <ClipLoader
-              color="#2563eb"
-              loading={loading}
-              size={40}
-              aria-label="Loading Spinner"
-              data-testid="loader"
-            />
-            <p className="mt-4 text-gray-600 text-sm font-medium">Loading transactions...</p>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+            <p className="mt-4 text-gray-600 text-sm font-medium">Loading Transactions...</p>
           </div>
         </div>
       </div>
@@ -294,7 +288,7 @@ const Transactions = () => {
             {/* Header */}
             <div className="flex items-center xl:shrink-0">
               <Filter size={20} className="text-gray-600 mr-2" />
-              <h3 className="text-base sm:text-lg font-semibold text-gray-800 whitespace-nowrap">Apply filters to transactions:</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800 whitespace-nowrap">Filters:</h3>
             </div>
 
             {/* Filters */}
@@ -356,7 +350,7 @@ const Transactions = () => {
 
         <div className="p-3 sm:p-3">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 space-y-3 sm:space-y-0">
-            <h3 className="text-base sm:text-lg font-semibold text-gray-800">
+            <h3 className="text-base sm:text-lg font-bold text-gray-800">
               Transactions ({transactions.length})
             </h3>
             <button

@@ -115,9 +115,13 @@ const Analytics = () => {
 
     if (loading) {
         return (
-            <div className="flex justify-center items-center p-6">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-                <span className="ml-2 text-gray-600">Loading analytics...</span>
+            <div className="px-2 sm:px-4 p-4">
+                <div className="bg-white rounded-lg shadow-md p-8">
+                    <div className="flex flex-col justify-center items-center py-12">
+                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                        <p className="mt-4 text-gray-600 text-sm font-medium">Loading Analytics...</p>
+                    </div>
+                </div>
             </div>
         );
     }
@@ -156,7 +160,7 @@ const Analytics = () => {
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-3">
                 {/* Summary Cards */}
                 <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 border border-gray-100">
-                    <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4">
+                    <h2 className="text-base sm:text-lg font-medium text-gray-800 mb-3 sm:mb-4">
                         Summary - {selectedMonth} {selectedYear}
                     </h2>
                     <div className="grid grid-cols-2 gap-2 sm:gap-3">
@@ -240,7 +244,7 @@ const Analytics = () => {
 
                 {/* Pie Chart */}
                 <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 border border-gray-100">
-                    <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-3">
+                    <h3 className="text-base sm:text-lg font-medium text-gray-800 mb-3">
                         Expense Distribution - {selectedMonth} {selectedYear}
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -289,7 +293,7 @@ const Analytics = () => {
 
                 {/* Bar Chart */}
                 <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 border border-gray-100">
-                    <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-3">
+                    <h3 className="text-base sm:text-lg font-medium text-gray-800 mb-3">
                         Income vs Expenses - {selectedMonth} {selectedYear}
                     </h3>
                     <div className="h-40 sm:h-48">
