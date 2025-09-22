@@ -125,7 +125,7 @@ const Analytics = () => {
     return (
         <div className="p-2 sm:p-4">
             {/* Filters */}
-            <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 border border-gray-100 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 border border-gray-100 mb-3">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
                     <h1 className="text-lg sm:text-xl font-bold text-gray-800">Expense Analysis</h1>
                     <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
@@ -153,7 +153,7 @@ const Analytics = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-3">
                 {/* Summary Cards */}
                 <div className="bg-white rounded-lg shadow-md p-3 sm:p-4 border border-gray-100">
                     <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4">

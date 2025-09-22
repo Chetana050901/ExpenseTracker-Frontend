@@ -354,7 +354,7 @@ const Transactions = () => {
           </div>
         </div>
 
-        <div className="p-3 sm:p-6">
+        <div className="p-3 sm:p-3">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 space-y-3 sm:space-y-0">
             <h3 className="text-base sm:text-lg font-semibold text-gray-800">
               Transactions ({transactions.length})
@@ -408,11 +408,11 @@ const Transactions = () => {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-sm text-gray-600">Description:</span>
-                        <span className="text-sm font-medium text-gray-800 text-right">{String(t.description || 'No description')}</span>
+                        <span className="text-sm text-gray-600 text-right">{String(t.description || 'No description')}</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-sm text-gray-600">Category:</span>
-                        <span className="text-sm text-gray-600 capitalize">{getCategoryName(t.category)}</span>
+                        <span className="text-sm text-gray-600 capitalize font-medium">{getCategoryName(t.category)}</span>
                       </div>
                       <div className="flex justify-between border-t pt-2 mt-2">
                         <span className="text-sm font-medium text-gray-600">Amount:</span>
@@ -445,8 +445,8 @@ const Transactions = () => {
                             {String(t.type || 'Unknown').charAt(0).toUpperCase() + String(t.type || 'Unknown').slice(1)}
                           </span>
                         </td>
-                        <td className="py-2 px-2 text-sm text-gray-800 border-r border-gray-200 font-medium">{String(t.description || 'No description')}</td>
-                        <td className="py-2 px-2 text-sm text-gray-600 capitalize border-r border-gray-200">{getCategoryName(t.category)}</td>
+                        <td className="py-2 px-2 text-sm text-gray-600 border-r border-gray-200">{String(t.description || 'No description')}</td>
+                        <td className="py-2 px-2 text-sm text-gray-600 capitalize border-r border-gray-200 font-medium">{getCategoryName(t.category)}</td>
                         <td className="py-2 px-2 text-sm font-bold text-gray-800 border-r border-gray-200">{formatAmount(t.amount)}</td>
                         <td className="py-2 px-2 text-sm">
                           <div className="flex space-x-1">

@@ -68,7 +68,7 @@ const ExpenseTracker = () => {
                 </div>
             </header>
 
-            <main className="pt-15 p-4 bg-gradient-to-br from-blue-50 to-indigo-100">
+            <main className="pt-13 p-4 bg-gradient-to-br from-blue-50 to-indigo-100">
                 <Analytics />
                 <Transactions />
             </main>
