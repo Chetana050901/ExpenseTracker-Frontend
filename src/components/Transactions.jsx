@@ -253,7 +253,7 @@ const Transactions = () => {
     return `₹${amount.toLocaleString()}`;
   };
 
-  // Get category name from category ID - FIXED
+  // Get category name from category ID 
   const getCategoryName = (categoryId) => {
     if (!categoryId) return 'Unknown';
 
